@@ -23,15 +23,15 @@ class ProcessCloud
 
         $this->html();
         $this->pdf();
-        $this->png();
-        $this->jpg();
+        //$this->png();
+        //$this->jpg();
         $this->svg();
 
         $this->cloud->update();
 
         return [
             'code' => $this->cloud->code,
-            'sjpg' => $this->cloud->sjpg
+            //'sjpg' => $this->cloud->sjpg
         ];
     }
 
